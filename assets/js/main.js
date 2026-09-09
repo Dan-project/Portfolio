@@ -433,7 +433,7 @@ const EXPERIENCE = [
     }
   },
   {
-    id: 'stage-4', images: ['assets/img/project-roboticequip.jpg'],
+    id: 'stage-4', images: ['assets/img/project-roboticequip-2.jpg', 'assets/img/project-roboticequip.jpg'],
     fr: {
       year: '4e année', date: '4e année — Département Master', org: 'Sorbonne Université & ENSAM',
       title: "Développement d'équipements robotiques pédagogiques",
