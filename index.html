@@ -28,14 +28,20 @@
   <div class="container">
     <a href="#home" class="logo"><span class="bracket">&lt;</span>Dan_Calamia<span class="bracket">/&gt;</span><span class="cursor-blink"></span></a>
     <ul class="nav-links">
-      <li><a href="#about"><span class="num">01.</span>À propos</a></li>
-      <li><a href="#skills"><span class="num">02.</span>Compétences</a></li>
-      <li><a href="#projects"><span class="num">03.</span>Projets</a></li>
-      <li><a href="#experience"><span class="num">04.</span>Expérience</a></li>
-      <li><a href="#contact"><span class="num">05.</span>Contact</a></li>
+      <li><a href="#about"><span class="num">01.</span><span data-i18n="nav.about">À propos</span></a></li>
+      <li><a href="#skills"><span class="num">02.</span><span data-i18n="nav.skills">Compétences</span></a></li>
+      <li><a href="#projects"><span class="num">03.</span><span data-i18n="nav.projects">Projets</span></a></li>
+      <li><a href="#experience"><span class="num">04.</span><span data-i18n="nav.experience">Expérience</span></a></li>
+      <li><a href="#contact"><span class="num">05.</span><span data-i18n="nav.contact">Contact</span></a></li>
     </ul>
-    <a class="nav-cta" href="assets/docs/Portfolio_Dan_CALAMIA.pdf" target="_blank" rel="noopener">./portfolio.pdf</a>
-    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <div class="nav-right">
+      <div class="lang-switch" id="lang-switch">
+        <button type="button" class="lang-btn active" data-lang="fr">FR</button>
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <a class="nav-cta" href="assets/docs/Portfolio_Dan_CALAMIA.pdf" target="_blank" rel="noopener">./portfolio.pdf</a>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
   </div>
 </nav>
 
@@ -45,18 +51,18 @@
   <section class="hero" id="home">
     <canvas id="hero-canvas"></canvas>
     <div class="container">
-      <div class="hero-kicker"><span class="dot"></span> DISPONIBLE POUR STAGE / ALTERNANCE / OPPORTUNITÉS</div>
-      <h1>Dan Calamia<br><span class="accent-text">Ingénieur Robotique.</span></h1>
+      <div class="hero-kicker"><span class="dot"></span> <span data-i18n="hero.kicker">DISPONIBLE POUR STAGE / ALTERNANCE / OPPORTUNITÉS</span></div>
+      <h1>Dan Calamia<br><span class="accent-text" data-i18n="hero.title2">Ingénieur Robotique.</span></h1>
       <div class="hero-typed-wrap"><span class="prompt">dan@robotics:~$</span> <span id="hero-typed"></span><span class="typed-cursor">&nbsp;</span></div>
-      <p class="lede">Étudiant en <strong>Master 2 Systèmes Avancés et Robotique</strong> (Sorbonne Université &amp; ENSAM, Cursus Master en Ingénierie), passionné par les <strong>robots mobiles et humanoïdes</strong>, leur autonomie, leur perception et leur contrôle.</p>
+      <p class="lede" data-i18n-html="hero.lede">Étudiant en <strong>Master 2 Systèmes Avancés et Robotique</strong> (Sorbonne Université &amp; ENSAM, Cursus Master en Ingénierie), passionné par les <strong>robots mobiles et humanoïdes</strong>, leur autonomie, leur perception et leur contrôle.</p>
       <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">Voir mes projets ↓</a>
-        <a href="#contact" class="btn btn-ghost">Me contacter</a>
+        <a href="#projects" class="btn btn-primary" data-i18n="hero.btnProjects">Voir mes projets ↓</a>
+        <a href="#contact" class="btn btn-ghost" data-i18n="hero.btnContact">Me contacter</a>
       </div>
       <div class="hero-stats">
-        <div class="stat"><b>9</b><span>Projets robotique</span></div>
-        <div class="stat"><b>4</b><span>Stages / expériences terrain</span></div>
-        <div class="stat"><b>5</b><span>Ans de cursus CMI</span></div>
+        <div class="stat"><b>9</b><span data-i18n="hero.stat1">Projets robotique</span></div>
+        <div class="stat"><b>4</b><span data-i18n="hero.stat2">Stages / expériences terrain</span></div>
+        <div class="stat"><b>5</b><span data-i18n="hero.stat3">Ans de cursus CMI</span></div>
       </div>
     </div>
     <div class="scroll-cue"><span class="line"></span>Scroll</div>
@@ -66,32 +72,32 @@
   <section id="about">
     <div class="container">
       <div class="section-head reveal">
-        <div class="section-label">// 01 — À propos</div>
-        <h2>Du terrain aux algorithmes.</h2>
-        <p>Un parcours mêlant mécanique, informatique et robotique, construit sur cinq ans de Cursus Master en Ingénierie (CMI).</p>
+        <div class="section-label" data-i18n="about.label">// 01 — À propos</div>
+        <h2 data-i18n="about.h2">Du terrain aux algorithmes.</h2>
+        <p data-i18n="about.intro">Un parcours mêlant mécanique, informatique et robotique, construit sur cinq ans de Cursus Master en Ingénierie (CMI).</p>
       </div>
 
       <div class="about-grid">
         <div class="about-text reveal-left">
-          <p>Je termine actuellement un <strong>Master en Robotique</strong> à Sorbonne Université, avec des enseignements suivis à l'ENSAM, après une licence en <strong>Ingénierie Mécanique</strong>. Ce parcours CMI (Cursus Master en Ingénierie) impose une charge de travail renforcée : 36 ECTS par semestre, des stages obligatoires, une mobilité internationale et des enseignements en innovation et entrepreneuriat.</p>
-          <p>En 2024, j'ai suivi un semestre à la <strong>National Taiwan University</strong> (Taipei), centré sur les systèmes mécaniques et les méthodes numériques.</p>
-          <p>Spécialisé en <strong>robotique mobile, haptique, simulation et intelligence artificielle pour la robotique</strong>, je m'intéresse particulièrement aux manipulateurs robotiques, à la modélisation et au contrôle. Parallèlement à mes études, j'ai financé mon parcours par différents emplois étudiants (agent de production, sécurité, agent d'entretien).</p>
+          <p data-i18n-html="about.p1">Je termine actuellement un <strong>Master en Robotique</strong> à Sorbonne Université, avec des enseignements suivis à l'ENSAM, après une licence en <strong>Ingénierie Mécanique</strong>. Ce parcours CMI (Cursus Master en Ingénierie) impose une charge de travail renforcée : 36 ECTS par semestre, des stages obligatoires, une mobilité internationale et des enseignements en innovation et entrepreneuriat.</p>
+          <p data-i18n-html="about.p2">En 2024, j'ai suivi un semestre à la <strong>National Taiwan University</strong> (Taipei), centré sur les systèmes mécaniques et les méthodes numériques.</p>
+          <p data-i18n-html="about.p3">Spécialisé en <strong>robotique mobile, haptique, simulation et intelligence artificielle pour la robotique</strong>, je m'intéresse particulièrement aux manipulateurs robotiques, à la modélisation et au contrôle. Parallèlement à mes études, j'ai financé mon parcours par différents emplois étudiants (agent de production, sécurité, agent d'entretien).</p>
 
           <div class="timeline">
             <div class="timeline-item">
-              <div class="t-date">2024 — Présent</div>
+              <div class="t-date" data-i18n="about.tl1date">2024 — Présent</div>
               <h4>Sorbonne Université &amp; ENSAM (Paris)</h4>
-              <p>Master en Robotique (Année 2) + CMI, enseignements à l'ENSAM — Manipulateurs robotiques, modélisation et contrôle.</p>
+              <p data-i18n="about.tl1desc">Master en Robotique (Année 2) + CMI, enseignements à l'ENSAM — Manipulateurs robotiques, modélisation et contrôle.</p>
             </div>
             <div class="timeline-item">
               <div class="t-date">2024</div>
               <h4>National Taiwan University (Taipei)</h4>
-              <p>Semestre d'échange — systèmes mécaniques et méthodes numériques.</p>
+              <p data-i18n="about.tl2desc">Semestre d'échange — systèmes mécaniques et méthodes numériques.</p>
             </div>
             <div class="timeline-item">
-              <div class="t-date">2020 — 2023</div>
+              <div class="t-date" data-i18n="about.tl3date">2020 — 2023</div>
               <h4>Sorbonne Université (Paris)</h4>
-              <p>Licence en Ingénierie Mécanique + CMI — systèmes mécaniques, dynamique, mathématiques appliquées.</p>
+              <p data-i18n="about.tl3desc">Licence en Ingénierie Mécanique + CMI — systèmes mécaniques, dynamique, mathématiques appliquées.</p>
             </div>
           </div>
         </div>
@@ -101,7 +107,7 @@
             <span class="term-dot r"></span><span class="term-dot y"></span><span class="term-dot g"></span>
             <span class="term-title">whoami.sh</span>
           </div>
-          <div class="term-body">
+          <div class="term-body" data-i18n-html="about.terminal">
             <div class="l"><span class="k">$</span> <span class="v">cat identite.json</span></div>
             <div class="l">{</div>
             <div class="l">&nbsp;&nbsp;<span class="k">"nom"</span>: <span class="v">"Dan Calamia"</span>,</div>
@@ -121,37 +127,37 @@
   <section id="skills">
     <div class="container">
       <div class="section-head reveal">
-        <div class="section-label">// 02 — Compétences</div>
-        <h2>Stack technique.</h2>
-        <p>Des outils de développement aux plateformes robotiques, en passant par la conception mécanique.</p>
+        <div class="section-label" data-i18n="skills.label">// 02 — Compétences</div>
+        <h2 data-i18n="skills.h2">Stack technique.</h2>
+        <p data-i18n="skills.intro">Des outils de développement aux plateformes robotiques, en passant par la conception mécanique.</p>
       </div>
 
       <div class="skills-grid">
         <div class="skill-card reveal">
-          <h3><span class="ico">💻</span> Développement</h3>
+          <h3><span class="ico">💻</span> <span data-i18n="skills.card1h3">Développement</span></h3>
           <ul class="tag-list">
             <li>Python</li><li>C / C++</li><li>MATLAB</li><li>LaTeX</li><li>HTML / CSS</li><li>Arduino</li>
           </ul>
         </div>
         <div class="skill-card reveal">
-          <h3><span class="ico">🤖</span> Robotique &amp; Outils techniques</h3>
-          <ul class="tag-list">
+          <h3><span class="ico">🤖</span> <span data-i18n="skills.card2h3">Robotique &amp; Outils techniques</span></h3>
+          <ul class="tag-list" data-i18n-html="skills.card2list">
             <li>ROS2</li><li>Gazebo</li><li>RViz</li><li>SolidWorks</li><li>Impression 3D</li><li>Docker / VM</li><li>OpenCV</li><li>Fritzing</li><li>Raspberry Pi</li><li>GitHub</li><li>POO</li><li>RDM6</li><li>Unity (en cours)</li>
           </ul>
         </div>
         <div class="skill-card reveal">
-          <h3><span class="ico">🌐</span> Langues</h3>
+          <h3><span class="ico">🌐</span> <span data-i18n="skills.card3h3">Langues</span></h3>
           <div class="lang-bars">
             <div class="lang-bar-row">
-              <div class="lbl"><span>Français</span><span>Courant</span></div>
+              <div class="lbl"><span data-i18n="skills.lang1name">Français</span><span data-i18n="skills.lang1level">Courant</span></div>
               <div class="lang-bar-track"><div class="lang-bar-fill" data-width="100"></div></div>
             </div>
             <div class="lang-bar-row">
-              <div class="lbl"><span>Anglais</span><span>Intermédiaire</span></div>
+              <div class="lbl"><span data-i18n="skills.lang2name">Anglais</span><span data-i18n="skills.lang2level">Intermédiaire</span></div>
               <div class="lang-bar-track"><div class="lang-bar-fill" data-width="65"></div></div>
             </div>
             <div class="lang-bar-row">
-              <div class="lbl"><span>Hébreu</span><span>Débutant</span></div>
+              <div class="lbl"><span data-i18n="skills.lang3name">Hébreu</span><span data-i18n="skills.lang3level">Débutant</span></div>
               <div class="lang-bar-track"><div class="lang-bar-fill" data-width="25"></div></div>
             </div>
           </div>
@@ -164,15 +170,15 @@
   <section id="projects">
     <div class="container">
       <div class="section-head reveal">
-        <div class="section-label">// 03 — Projets</div>
-        <h2>Cliquez pour explorer.</h2>
-        <p>Projets académiques et personnels, du prototype mécanique à la cartographie multi-robot. Cliquez sur une carte pour voir le détail.</p>
+        <div class="section-label" data-i18n="projects.label">// 03 — Projets</div>
+        <h2 data-i18n="projects.h2">Cliquez pour explorer.</h2>
+        <p data-i18n="projects.intro">Projets académiques et personnels, du prototype mécanique à la cartographie multi-robot. Cliquez sur une carte pour voir le détail.</p>
       </div>
 
       <div class="filter-row" id="filter-row">
-        <button class="filter-btn active" data-filter="all">Tous</button>
-        <button class="filter-btn" data-filter="academic">Académiques</button>
-        <button class="filter-btn" data-filter="personal">Personnels</button>
+        <button class="filter-btn active" data-filter="all" data-i18n="projects.filterAll">Tous</button>
+        <button class="filter-btn" data-filter="academic" data-i18n="projects.filterAcademic">Académiques</button>
+        <button class="filter-btn" data-filter="personal" data-i18n="projects.filterPersonal">Personnels</button>
       </div>
 
       <div class="projects-grid" id="projects-grid"></div>
@@ -183,13 +189,13 @@
   <section id="experience">
     <div class="container">
       <div class="section-head reveal">
-        <div class="section-label">// 04 — Expérience</div>
-        <h2>Stages &amp; terrain.</h2>
-        <p>Quatre stages, une année de cursus à la fois : chantier, recherche académique, développement pédagogique et robotique multi-robot.</p>
+        <div class="section-label" data-i18n="experience.label">// 04 — Expérience</div>
+        <h2 data-i18n="experience.h2">Stages &amp; terrain.</h2>
+        <p data-i18n="experience.intro">Quatre stages, une année de cursus à la fois : chantier, recherche académique, développement pédagogique et robotique multi-robot.</p>
       </div>
 
       <div class="exp-layout">
-        <nav class="exp-nav reveal-left" id="exp-nav" aria-label="Aller directement à un stage"></nav>
+        <nav class="exp-nav reveal-left" id="exp-nav" aria-label="Jump to internship"></nav>
         <div class="exp-list" id="exp-list"></div>
       </div>
     </div>
@@ -199,9 +205,9 @@
   <section id="contact">
     <div class="container">
       <div class="section-head reveal">
-        <div class="section-label">// 05 — Contact</div>
-        <h2>Discutons robotique.</h2>
-        <p>Ouvert aux opportunités de stage, alternance ou premier poste en ingénierie robotique.</p>
+        <div class="section-label" data-i18n="contact.label">// 05 — Contact</div>
+        <h2 data-i18n="contact.h2">Discutons robotique.</h2>
+        <p data-i18n="contact.intro">Ouvert aux opportunités de stage, alternance ou premier poste en ingénierie robotique.</p>
       </div>
 
       <div class="contact-grid">
@@ -222,8 +228,8 @@
         </a>
         <a class="contact-card reveal" href="assets/docs/Portfolio_Dan_CALAMIA.pdf" target="_blank" rel="noopener">
           <span class="ico">📄</span>
-          <span class="lbl">Portfolio complet</span>
-          <span class="val">Télécharger le PDF</span>
+          <span class="lbl" data-i18n="contact.pdfLbl">Portfolio complet</span>
+          <span class="val" data-i18n="contact.pdfVal">Télécharger le PDF</span>
         </a>
       </div>
     </div>
@@ -232,8 +238,8 @@
 </main>
 
 <footer class="site-footer">
-  <p>Conçu &amp; codé par Dan Calamia — <span class="heart">&lt;/&gt;</span> avec passion pour la robotique.</p>
-  <p>&copy; <span id="year"></span> Dan Calamia. Tous droits réservés.</p>
+  <p data-i18n-html="footer.line1">Conçu &amp; codé par Dan Calamia — <span class="heart">&lt;/&gt;</span> avec passion pour la robotique.</p>
+  <p>&copy; <span id="year"></span> <span data-i18n="footer.line2">Dan Calamia. Tous droits réservés.</span></p>
 </footer>
 
 <!-- ================= MODAL ================= -->
