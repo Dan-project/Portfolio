@@ -9,23 +9,6 @@ const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)
    --------------------------------------------------------- */
 const PROJECTS = [
   {
-    id: 'lidar',
-    year: '2025 — 2026',
-    category: 'academic',
-    title: 'Cartographie sémantique multi-robot (LiDAR + caméra)',
-    img: 'assets/img/project-lidar-semantic.jpg',
-    tags: ['LIO-SAM', 'YOLO', 'SLAM', 'Multi-robot'],
-    desc: "Fusion LiDAR-caméra pour construire des cartes sémantiques 3D, avec extension à un système multi-robot coopératif.",
-    details: [
-      "Développement d'algorithmes combinant LIO-SAM (SLAM LiDAR avec fermeture de boucle) et YOLO (segmentation sémantique) pour fusionner un LiDAR 3D et une caméra couleur 2D.",
-      "Entraînement, benchmarking et validation initiale sur le jeu de données KITTI.",
-      "Génération de cartes a priori à partir d'OpenStreetMap pour la navigation autonome contextualisée.",
-      "Tests réels en téléopération et acquisition de rosbags sur robots AgileX Ranger et Scout Mini.",
-      "Extension de l'architecture à un système multi-robot avec fusion de cartes distribuée et fermeture de boucle inter-robot."
-    ],
-    gallery: ['assets/img/project-lidar-semantic.jpg', 'assets/img/project-lidar-robot.jpg', 'assets/img/project-lidar-osm.jpg']
-  },
-  {
     id: 'turtlebot',
     year: '4e année',
     category: 'academic',
@@ -174,28 +157,51 @@ const PROJECTS = [
 
 const EXPERIENCE = [
   {
+    id: 'stage-2',
+    year: '2e année',
     date: '2e année',
     org: 'EMC Techni & CETO — Tremblay-en-France',
     title: 'Renforcement structurel — chantier & bureau d\'études',
     desc: "Stage ouvrier puis bureau d'études dans le renforcement structurel : préparation de chantier, maçonnerie, sondages destructifs et non destructifs, pose de jauges, calculs réglementaires et rédaction de rapports.",
     tags: ['RDM6', 'SLS / ULS', 'Diagnostic structurel'],
-    img: 'assets/img/project-structural.jpg'
+    images: ['assets/img/project-structural.jpg', 'assets/img/project-structural-2.jpg']
   },
   {
-    date: 'Institut Jean Le Rond d\'Alembert',
+    id: 'stage-3',
+    year: '3e année',
+    date: '3e année — Institut Jean Le Rond d\'Alembert',
     org: 'Recherche — Sorbonne Université',
     title: "Propagation d'ondes acoustiques dans les cristaux phononiques",
     desc: "Étude expérimentale et théorique de la propagation d'ondes acoustiques dans une structure périodique artificielle (cristal phononique), mise en évidence des bandes interdites selon l'angle d'incidence.",
     tags: ['Traitement du signal', 'FFT', 'Acoustique'],
-    img: 'assets/img/project-phononic.jpg'
+    images: ['assets/img/project-phononic.jpg']
   },
   {
-    date: 'Département Master',
+    id: 'stage-4',
+    year: '4e année',
+    date: '4e année — Département Master',
     org: 'Sorbonne Université & ENSAM',
     title: 'Développement d\'équipements robotiques pédagogiques',
     desc: "Amélioration de deux TP de robotique : déploiement multiplateforme du bras Pincher PX100 (Docker, compatibilité macOS/Windows/Linux) et portage MATLAB → Python du robot sériel 3R, avec réparation du matériel.",
     tags: ['Docker', 'Dynamixel', 'Python', 'ROS'],
-    img: 'assets/img/project-roboticequip.jpg'
+    images: ['assets/img/project-roboticequip.jpg']
+  },
+  {
+    id: 'stage-5',
+    year: '5e année',
+    date: '5e année — 2025 / 2026',
+    org: 'Master 2 — Sorbonne Université & ENSAM',
+    title: 'Cartographie sémantique multi-robot (LiDAR + caméra)',
+    desc: "Fusion LiDAR-caméra pour construire des cartes sémantiques 3D, avec extension à un système multi-robot coopératif.",
+    tags: ['LIO-SAM', 'YOLO', 'SLAM', 'Multi-robot'],
+    images: ['assets/img/project-lidar-semantic.jpg', 'assets/img/project-lidar-robot.jpg', 'assets/img/project-lidar-osm.jpg'],
+    details: [
+      "Développement d'algorithmes combinant LIO-SAM (SLAM LiDAR avec fermeture de boucle) et YOLO (segmentation sémantique) pour fusionner un LiDAR 3D et une caméra couleur 2D.",
+      "Entraînement, benchmarking et validation initiale sur le jeu de données KITTI.",
+      "Génération de cartes a priori à partir d'OpenStreetMap pour la navigation autonome contextualisée.",
+      "Tests réels en téléopération et acquisition de rosbags sur robots AgileX Ranger et Scout Mini.",
+      "Extension de l'architecture à un système multi-robot avec fusion de cartes distribuée et fermeture de boucle inter-robot."
+    ]
   },
 ];
 
@@ -536,24 +542,51 @@ document.addEventListener('keydown', (e) => {
 });
 
 /* ---------------------------------------------------------
-   Experience render
+   Experience render: quick-jump timeline nav + full inline stage cards
    --------------------------------------------------------- */
 const expList = document.getElementById('exp-list');
+const expNav = document.getElementById('exp-nav');
+
+if (expNav) {
+  expNav.innerHTML = EXPERIENCE.map(e => `
+    <a href="#${e.id}" class="exp-nav-item" data-target="${e.id}"><span class="dot"></span>${e.year}</a>
+  `).join('');
+}
+
 if (expList) {
   expList.innerHTML = EXPERIENCE.map((e, i) => `
-    <div class="exp-item reveal" style="--d:${i * 0.1}s">
-      <div>
+    <article class="exp-item reveal" id="${e.id}" style="--d:${i * 0.08}s">
+      <div class="exp-meta">
         <div class="exp-date">${e.date}</div>
         <div class="exp-org">${e.org}</div>
       </div>
       <div class="exp-body">
         <h3>${e.title}</h3>
         <p>${e.desc}</p>
+        ${e.details ? `<ul class="exp-details">${e.details.map(d => `<li>${d}</li>`).join('')}</ul>` : ''}
         <div class="tags">${e.tags.map(t => `<span>${t}</span>`).join('')}</div>
-        <div class="thumb-strip"><img src="${e.img}" alt="${e.title}" loading="lazy"></div>
+        <div class="exp-gallery exp-gallery-${e.images.length}">
+          ${e.images.map(src => `<img src="${src}" alt="${e.title}" loading="lazy">`).join('')}
+        </div>
       </div>
-    </div>
+    </article>
   `).join('');
+  initReveal(expList);
+}
+
+/* highlight the active stage in the quick-jump nav while scrolling */
+if (expNav) {
+  const expSections = EXPERIENCE.map(e => document.getElementById(e.id)).filter(Boolean);
+  const expNavLinks = [...expNav.querySelectorAll('.exp-nav-item')];
+  function updateExpNav() {
+    let current = expSections[0]?.id;
+    for (const s of expSections) {
+      if (s.getBoundingClientRect().top - 160 <= 0) current = s.id;
+    }
+    expNavLinks.forEach(a => a.classList.toggle('active', a.dataset.target === current));
+  }
+  window.addEventListener('scroll', updateExpNav, { passive: true });
+  updateExpNav();
 }
 
 /* ---------------------------------------------------------
