@@ -219,6 +219,9 @@ document.querySelectorAll('.nav-links a').forEach(a => {
   });
 });
 
+const sections = [...document.querySelectorAll('main section[id]')];
+const navAnchors = [...document.querySelectorAll('.nav-links a')];
+
 function onScroll() {
   const y = window.scrollY;
   nav.classList.toggle('scrolled', y > 10);
@@ -233,8 +236,6 @@ function onScroll() {
 window.addEventListener('scroll', onScroll, { passive: true });
 onScroll();
 
-const sections = [...document.querySelectorAll('main section[id]')];
-const navAnchors = [...document.querySelectorAll('.nav-links a')];
 function scrollspy() {
   let current = sections[0]?.id;
   const offset = 140;
@@ -245,19 +246,45 @@ function scrollspy() {
 }
 
 /* ---------------------------------------------------------
-   Reveal on scroll (IntersectionObserver)
+   Reveal on scroll
+   Primary trigger is IntersectionObserver; a plain scroll/resize
+   position check runs alongside it as a backup so content can never
+   get stuck invisible if the observer doesn't fire for any reason.
+   Elements only start hidden once .js-ready is added below, so a
+   total failure of this code simply leaves everything visible.
    --------------------------------------------------------- */
-const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('in-view');
-      revealObserver.unobserve(entry.target);
+document.documentElement.classList.add('js-ready');
+
+let revealObserver = null;
+try {
+  revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+} catch (e) {
+  revealObserver = null;
+}
+
+function checkRevealFallback() {
+  const vh = window.innerHeight;
+  document.querySelectorAll('.reveal:not(.in-view), .reveal-left:not(.in-view), .reveal-scale:not(.in-view)').forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < vh * 0.9 && rect.bottom > 0) {
+      el.classList.add('in-view');
     }
   });
-}, { threshold: 0.15 });
+}
+window.addEventListener('scroll', checkRevealFallback, { passive: true });
+window.addEventListener('resize', checkRevealFallback);
 
 function initReveal(root = document) {
-  root.querySelectorAll('.reveal, .reveal-left, .reveal-scale').forEach(el => revealObserver.observe(el));
+  const els = root.querySelectorAll('.reveal, .reveal-left, .reveal-scale');
+  els.forEach(el => revealObserver?.observe(el));
+  checkRevealFallback();
 }
 
 /* stagger helper: assign --d based on index within parent */
