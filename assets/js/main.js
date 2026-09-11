@@ -15,7 +15,7 @@ const I18N = {
     'nav.experience': 'Expérience',
     'nav.contact': 'Contact',
 
-    'hero.kicker': 'DISPONIBLE POUR STAGE / ALTERNANCE / OPPORTUNITÉS',
+    'hero.kicker': 'OUVERT À TOUTE PROPOSITION D\'OPPORTUNITÉ',
     'hero.title2': 'Ingénieur Robotique.',
     'hero.lede': 'Étudiant en <strong>Master 2 Systèmes Avancés et Robotique</strong> (Sorbonne Université &amp; ENSAM, Cursus Master en Ingénierie), passionné par les <strong>robots mobiles et humanoïdes</strong>, leur autonomie, leur perception et leur contrôle.',
     'hero.btnProjects': 'Voir mes projets ↓',
@@ -77,7 +77,7 @@ const I18N = {
 
     'contact.label': '// 05 — Contact',
     'contact.h2': 'Discutons robotique.',
-    'contact.intro': 'Ouvert aux opportunités de stage, alternance ou premier poste en ingénierie robotique.',
+    'contact.intro': 'Ouvert à toute proposition d\'opportunité en ingénierie robotique.',
     'contact.pdfLbl': 'CV',
     'contact.pdfVal': 'Télécharger le CV',
 
@@ -90,7 +90,7 @@ const I18N = {
     'nav.experience': 'Experience',
     'nav.contact': 'Contact',
 
-    'hero.kicker': 'OPEN TO INTERNSHIPS / WORK-STUDY / OPPORTUNITIES',
+    'hero.kicker': 'OPEN TO ANY OPPORTUNITY',
     'hero.title2': 'Robotics Engineer.',
     'hero.lede': "A graduate student in <strong>Advanced Systems and Robotics (M2)</strong> (Sorbonne Université &amp; ENSAM, Cursus Master en Ingénierie), passionate about <strong>mobile and humanoid robots</strong> — their autonomy, perception, and control.",
     'hero.btnProjects': 'View my projects ↓',
@@ -152,7 +152,7 @@ const I18N = {
 
     'contact.label': '// 05 — Contact',
     'contact.h2': "Let's talk robotics.",
-    'contact.intro': 'Open to internship, work-study, or entry-level opportunities in robotics engineering.',
+    'contact.intro': 'Open to any opportunity in robotics engineering.',
     'contact.pdfLbl': 'CV',
     'contact.pdfVal': 'Download the CV',
 
