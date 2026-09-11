@@ -3,7 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script>if (location.hash) { document.documentElement.style.scrollBehavior = 'auto'; }</script>
+<script>
+  if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+  if (location.hash) { document.documentElement.style.scrollBehavior = 'auto'; }
+  else { window.scrollTo(0, 0); }
+</script>
 <title>Dan Calamia — Ingénieur Robotique</title>
 <meta name="description" content="Portfolio de Dan Calamia, ingénieur en robotique — Master Systèmes Avancés et Robotique, Sorbonne Université &amp; ENSAM. Projets académiques et personnels en robotique, ROS2, SLAM et automatisation.">
 <meta name="theme-color" content="#060a10">
@@ -39,7 +43,7 @@
         <button type="button" class="lang-btn active" data-lang="fr">FR</button>
         <button type="button" class="lang-btn" data-lang="en">EN</button>
       </div>
-      <a class="nav-cta" href="assets/docs/Portfolio_Dan_CALAMIA.pdf" target="_blank" rel="noopener">./portfolio.pdf</a>
+      <a class="nav-cta" href="assets/docs/CV_Dan_Calamia.pdf" target="_blank" rel="noopener">./cv.pdf</a>
       <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -57,6 +61,7 @@
       <p class="lede" data-i18n-html="hero.lede">Étudiant en <strong>Master 2 Systèmes Avancés et Robotique</strong> (Sorbonne Université &amp; ENSAM, Cursus Master en Ingénierie), passionné par les <strong>robots mobiles et humanoïdes</strong>, leur autonomie, leur perception et leur contrôle.</p>
       <div class="hero-actions">
         <a href="#projects" class="btn btn-primary" data-i18n="hero.btnProjects">Voir mes projets ↓</a>
+        <a href="#experience" class="btn btn-ghost" data-i18n="hero.btnExperience">Voir mes stages ↓</a>
         <a href="#contact" class="btn btn-ghost" data-i18n="hero.btnContact">Me contacter</a>
       </div>
       <div class="hero-stats">
@@ -229,10 +234,10 @@
           <span class="lbl">GitHub</span>
           <span class="val">Dan-project</span>
         </a>
-        <a class="contact-card reveal" href="assets/docs/Portfolio_Dan_CALAMIA.pdf" target="_blank" rel="noopener">
+        <a class="contact-card reveal" href="assets/docs/CV_Dan_Calamia.pdf" target="_blank" rel="noopener">
           <span class="ico">📄</span>
-          <span class="lbl" data-i18n="contact.pdfLbl">Portfolio complet</span>
-          <span class="val" data-i18n="contact.pdfVal">Télécharger le PDF</span>
+          <span class="lbl" data-i18n="contact.pdfLbl">CV</span>
+          <span class="val" data-i18n="contact.pdfVal">Télécharger le CV</span>
         </a>
       </div>
     </div>
@@ -241,7 +246,6 @@
 </main>
 
 <footer class="site-footer">
-  <p data-i18n-html="footer.line1">Conçu &amp; codé par Dan Calamia — <span class="heart">&lt;/&gt;</span> avec passion pour la robotique.</p>
   <p>&copy; <span id="year"></span> <span data-i18n="footer.line2">Dan Calamia. Tous droits réservés.</span></p>
 </footer>
 
