@@ -28,8 +28,6 @@ const I18N = {
     'about.h2': 'Du terrain aux algorithmes.',
     'about.intro': 'Un parcours mêlant mécanique, informatique et robotique, construit sur cinq ans de Cursus Master en Ingénierie (CMI).',
     'about.p1': "Je termine actuellement un <strong>Master en Robotique</strong> à Sorbonne Université, avec des enseignements suivis à l'ENSAM, après une licence en <strong>Ingénierie Mécanique</strong>. Ce parcours CMI (Cursus Master en Ingénierie) impose une charge de travail renforcée : 36 ECTS par semestre, des stages obligatoires, une mobilité internationale et des enseignements en innovation et entrepreneuriat.",
-    'about.p2': "En 2024, j'ai suivi un semestre à la <strong>National Taiwan University</strong> (Taipei), centré sur les systèmes mécaniques et les méthodes numériques.",
-    'about.p3': "Spécialisé en <strong>robotique mobile, haptique, simulation et intelligence artificielle pour la robotique</strong>, je m'intéresse particulièrement aux manipulateurs robotiques, à la modélisation et au contrôle. Parallèlement à mes études, j'ai financé mon parcours par différents emplois étudiants (agent de production, sécurité, agent d'entretien).",
     'about.tl1date': '2024 — Présent',
     'about.tl1desc': "Master en Robotique (Année 2) + CMI, enseignements à l'ENSAM — Manipulateurs robotiques, modélisation et contrôle.",
     'about.tl2desc': "Semestre d'échange — systèmes mécaniques et méthodes numériques.",
@@ -42,7 +40,7 @@ const I18N = {
       <div class="l">&nbsp;&nbsp;<span class="k">"role"</span>: <span class="v">"Ingénieur Robotique"</span>,</div>
       <div class="l">&nbsp;&nbsp;<span class="k">"formation"</span>: <span class="v">"M2 SAR — Sorbonne / ENSAM"</span>,</div>
       <div class="l">&nbsp;&nbsp;<span class="k">"interets"</span>: [<span class="v">"SLAM"</span>, <span class="v">"ROS2"</span>, <span class="v">"IA"</span>, <span class="v">"humanoïdes"</span>],</div>
-      <div class="l">&nbsp;&nbsp;<span class="k">"langues"</span>: [<span class="v">"FR"</span>, <span class="v">"EN"</span>, <span class="v">"HE"</span>]</div>
+      <div class="l">&nbsp;&nbsp;<span class="k">"langues"</span>: [<span class="v">"FR"</span>, <span class="v">"EN"</span>]</div>
       <div class="l">}</div>
       <div class="l"><span class="c">// Certifications: TOEIC 830 (B2), Permis B</span></div>
     `,
@@ -51,12 +49,11 @@ const I18N = {
     'skills.h2': 'Stack technique.',
     'skills.intro': 'Des outils de développement aux plateformes robotiques, en passant par la conception mécanique.',
     'skills.card1h3': 'Développement',
-    'skills.card2h3': 'Robotique &amp; Outils techniques',
+    'skills.card2h3': 'Robotique & Outils techniques',
     'skills.card2list': '<li>ROS2</li><li>Gazebo</li><li>RViz</li><li>SolidWorks</li><li>Impression 3D</li><li>Docker / VM</li><li>OpenCV</li><li>Fritzing</li><li>Raspberry Pi</li><li>GitHub</li><li>POO</li><li>RDM6</li><li>Unity (en cours)</li>',
     'skills.card3h3': 'Langues',
     'skills.lang1name': 'Français', 'skills.lang1level': 'Courant',
-    'skills.lang2name': 'Anglais', 'skills.lang2level': 'Intermédiaire',
-    'skills.lang3name': 'Hébreu', 'skills.lang3level': 'Débutant',
+    'skills.lang2name': 'Anglais', 'skills.lang2level': 'TOEIC B2 validé',
 
     'projects.label': '// 03 — Projets',
     'projects.h2': 'Cliquez pour explorer.',
@@ -73,7 +70,7 @@ const I18N = {
     'projects.close': 'Fermer',
 
     'experience.label': '// 04 — Expérience',
-    'experience.h2': 'Stages &amp; terrain.',
+    'experience.h2': 'Stages & terrain.',
     'experience.intro': 'Quatre stages, une année de cursus à la fois : chantier, recherche académique, développement pédagogique et robotique multi-robot.',
     'experience.navAria': 'Aller directement à un stage',
 
@@ -106,8 +103,6 @@ const I18N = {
     'about.h2': 'From the field to the algorithms.',
     'about.intro': 'A path blending mechanics, computer science and robotics, built over five years in the Cursus Master en Ingénierie (CMI).',
     'about.p1': "I'm currently finishing a <strong>Master's in Robotics</strong> at Sorbonne Université, with coursework taken at ENSAM, after a Bachelor's in <strong>Mechanical Engineering</strong>. This CMI program (Cursus Master en Ingénierie) comes with a heavier workload: 36 ECTS per semester, mandatory internships, international mobility, and courses in innovation and entrepreneurship.",
-    'about.p2': "In 2024, I spent a semester at <strong>National Taiwan University</strong> (Taipei), focused on mechanical systems and numerical methods.",
-    'about.p3': "Specialized in <strong>mobile robotics, haptics, simulation, and AI for robotics</strong>, I'm particularly interested in robotic manipulators, modeling, and control. Alongside my studies, I funded my education through various student jobs (production worker, security guard, cleaner).",
     'about.tl1date': '2024 — Present',
     'about.tl1desc': "Master's in Robotics (Year 2) + CMI, coursework at ENSAM — Robotic manipulators, modeling and control.",
     'about.tl2desc': 'Exchange semester — mechanical systems and numerical methods.',
@@ -120,7 +115,7 @@ const I18N = {
       <div class="l">&nbsp;&nbsp;<span class="k">"role"</span>: <span class="v">"Robotics Engineer"</span>,</div>
       <div class="l">&nbsp;&nbsp;<span class="k">"education"</span>: <span class="v">"M2 SAR — Sorbonne / ENSAM"</span>,</div>
       <div class="l">&nbsp;&nbsp;<span class="k">"interests"</span>: [<span class="v">"SLAM"</span>, <span class="v">"ROS2"</span>, <span class="v">"AI"</span>, <span class="v">"humanoids"</span>],</div>
-      <div class="l">&nbsp;&nbsp;<span class="k">"languages"</span>: [<span class="v">"FR"</span>, <span class="v">"EN"</span>, <span class="v">"HE"</span>]</div>
+      <div class="l">&nbsp;&nbsp;<span class="k">"languages"</span>: [<span class="v">"FR"</span>, <span class="v">"EN"</span>]</div>
       <div class="l">}</div>
       <div class="l"><span class="c">// Certifications: TOEIC 830 (B2), Driver's license (FR)</span></div>
     `,
@@ -129,12 +124,11 @@ const I18N = {
     'skills.h2': 'Tech stack.',
     'skills.intro': 'From development tools to robotics platforms, by way of mechanical design.',
     'skills.card1h3': 'Development',
-    'skills.card2h3': 'Robotics &amp; Technical Tools',
+    'skills.card2h3': 'Robotics & Technical Tools',
     'skills.card2list': '<li>ROS2</li><li>Gazebo</li><li>RViz</li><li>SolidWorks</li><li>3D Printing</li><li>Docker / VM</li><li>OpenCV</li><li>Fritzing</li><li>Raspberry Pi</li><li>GitHub</li><li>OOP</li><li>RDM6</li><li>Unity (in progress)</li>',
     'skills.card3h3': 'Languages',
     'skills.lang1name': 'French', 'skills.lang1level': 'Native',
-    'skills.lang2name': 'English', 'skills.lang2level': 'Intermediate',
-    'skills.lang3name': 'Hebrew', 'skills.lang3level': 'Beginner',
+    'skills.lang2name': 'English', 'skills.lang2level': 'TOEIC B2 certified',
 
     'projects.label': '// 03 — Projects',
     'projects.h2': 'Click to explore.',
@@ -151,7 +145,7 @@ const I18N = {
     'projects.close': 'Close',
 
     'experience.label': '// 04 — Experience',
-    'experience.h2': 'Internships &amp; Fieldwork.',
+    'experience.h2': 'Internships & Fieldwork.',
     'experience.intro': 'Four internships, one program year at a time: construction site, academic research, educational development, and multi-robot robotics.',
     'experience.navAria': 'Jump to internship',
 
