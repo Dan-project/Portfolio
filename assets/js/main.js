@@ -19,6 +19,7 @@ const I18N = {
     'hero.title2': 'Ingénieur Robotique.',
     'hero.lede': 'Étudiant en <strong>Master 2 Systèmes Avancés et Robotique</strong> (Sorbonne Université &amp; ENSAM, Cursus Master en Ingénierie), passionné par les <strong>robots mobiles et humanoïdes</strong>, leur autonomie, leur perception et leur contrôle.',
     'hero.btnProjects': 'Voir mes projets ↓',
+    'hero.btnExperience': 'Voir mes stages ↓',
     'hero.btnContact': 'Me contacter',
     'hero.stat1': 'Projets robotique',
     'hero.stat2': 'Stages / expériences terrain',
@@ -70,17 +71,16 @@ const I18N = {
     'projects.close': 'Fermer',
 
     'experience.label': '// 04 — Expérience',
-    'experience.h2': 'Stages & terrain.',
+    'experience.h2': 'Stages',
     'experience.intro': 'Quatre stages, une année de cursus à la fois : chantier, recherche académique, développement pédagogique et robotique multi-robot.',
     'experience.navAria': 'Aller directement à un stage',
 
     'contact.label': '// 05 — Contact',
     'contact.h2': 'Discutons robotique.',
     'contact.intro': 'Ouvert aux opportunités de stage, alternance ou premier poste en ingénierie robotique.',
-    'contact.pdfLbl': 'Portfolio complet',
-    'contact.pdfVal': 'Télécharger le PDF',
+    'contact.pdfLbl': 'CV',
+    'contact.pdfVal': 'Télécharger le CV',
 
-    'footer.line1': 'Conçu &amp; codé par Dan Calamia — <span class="heart">&lt;/&gt;</span> avec passion pour la robotique.',
     'footer.line2': 'Dan Calamia. Tous droits réservés.',
   },
   en: {
@@ -94,6 +94,7 @@ const I18N = {
     'hero.title2': 'Robotics Engineer.',
     'hero.lede': "A graduate student in <strong>Advanced Systems and Robotics (M2)</strong> (Sorbonne Université &amp; ENSAM, Cursus Master en Ingénierie), passionate about <strong>mobile and humanoid robots</strong> — their autonomy, perception, and control.",
     'hero.btnProjects': 'View my projects ↓',
+    'hero.btnExperience': 'View my internships ↓',
     'hero.btnContact': 'Get in touch',
     'hero.stat1': 'Robotics projects',
     'hero.stat2': 'Internships / fieldwork',
@@ -145,17 +146,16 @@ const I18N = {
     'projects.close': 'Close',
 
     'experience.label': '// 04 — Experience',
-    'experience.h2': 'Internships & Fieldwork.',
+    'experience.h2': 'Internships',
     'experience.intro': 'Four internships, one program year at a time: construction site, academic research, educational development, and multi-robot robotics.',
     'experience.navAria': 'Jump to internship',
 
     'contact.label': '// 05 — Contact',
     'contact.h2': "Let's talk robotics.",
     'contact.intro': 'Open to internship, work-study, or entry-level opportunities in robotics engineering.',
-    'contact.pdfLbl': 'Full Portfolio',
-    'contact.pdfVal': 'Download the PDF',
+    'contact.pdfLbl': 'CV',
+    'contact.pdfVal': 'Download the CV',
 
-    'footer.line1': 'Designed &amp; built by Dan Calamia — <span class="heart">&lt;/&gt;</span> with a passion for robotics.',
     'footer.line2': 'Dan Calamia. All rights reserved.',
   },
 };
@@ -414,13 +414,13 @@ const EXPERIENCE = [
   {
     id: 'stage-3', images: ['assets/img/project-phononic.jpg'],
     fr: {
-      year: '3e année', date: "3e année — Institut Jean Le Rond d'Alembert", org: 'Recherche — Sorbonne Université',
+      year: '3e année', date: '3e année', org: "Institut Jean Le Rond d'Alembert — Sorbonne Université, Paris",
       title: "Propagation d'ondes acoustiques dans les cristaux phononiques",
       tags: ['Traitement du signal', 'FFT', 'Acoustique'],
       desc: "Étude expérimentale et théorique de la propagation d'ondes acoustiques dans une structure périodique artificielle (cristal phononique), mise en évidence des bandes interdites selon l'angle d'incidence."
     },
     en: {
-      year: '3rd year', date: "3rd year — Institut Jean Le Rond d'Alembert", org: 'Research — Sorbonne Université',
+      year: '3rd year', date: '3rd year', org: "Institut Jean Le Rond d'Alembert — Sorbonne Université, Paris",
       title: 'Acoustic Wave Propagation in Phononic Crystals',
       tags: ['Signal Processing', 'FFT', 'Acoustics'],
       desc: "Experimental and theoretical study of acoustic wave propagation in an artificial periodic structure (phononic crystal), highlighting band gaps depending on the angle of incidence."
@@ -429,13 +429,13 @@ const EXPERIENCE = [
   {
     id: 'stage-4', images: ['assets/img/project-roboticequip-2.jpg', 'assets/img/project-roboticequip.jpg'],
     fr: {
-      year: '4e année', date: '4e année — Département Master', org: 'Sorbonne Université & ENSAM',
+      year: '4e année', date: '4e année', org: 'Spi — Sorbonne Université, Paris',
       title: "Développement d'équipements robotiques pédagogiques",
       tags: ['Docker', 'Dynamixel', 'Python', 'ROS'],
       desc: "Amélioration de deux TP de robotique : déploiement multiplateforme du bras Pincher PX100 (Docker, compatibilité macOS/Windows/Linux) et portage MATLAB → Python du robot sériel 3R, avec réparation du matériel."
     },
     en: {
-      year: '4th year', date: "4th year — Master's Department", org: 'Sorbonne Université & ENSAM',
+      year: '4th year', date: '4th year', org: 'Spi — Sorbonne Université, Paris',
       title: 'Developing Educational Robotics Equipment',
       tags: ['Docker', 'Dynamixel', 'Python', 'ROS'],
       desc: "Improved two robotics labs: multi-platform deployment of the Pincher PX100 arm (Docker, macOS/Windows/Linux compatibility) and porting the 3R serial robot from MATLAB to Python, along with hardware repairs."
@@ -444,7 +444,7 @@ const EXPERIENCE = [
   {
     id: 'stage-5', images: ['assets/img/project-lidar-semantic.jpg', 'assets/img/project-lidar-robot.jpg', 'assets/img/project-lidar-osm.jpg'],
     fr: {
-      year: '5e année', date: '5e année — 2025 / 2026', org: 'Master 2 — Sorbonne Université & ENSAM',
+      year: '5e année', date: '5e année', org: "CRIStAL — Université de Lille, Villeneuve d'Ascq",
       title: 'Cartographie sémantique multi-robot (LiDAR + caméra)',
       tags: ['LIO-SAM', 'YOLO', 'SLAM', 'Multi-robot'],
       desc: "Fusion LiDAR-caméra pour construire des cartes sémantiques 3D, avec extension à un système multi-robot coopératif.",
@@ -457,7 +457,7 @@ const EXPERIENCE = [
       ]
     },
     en: {
-      year: '5th year', date: '5th year — 2025 / 2026', org: 'Master 2 — Sorbonne Université & ENSAM',
+      year: '5th year', date: '5th year', org: "CRIStAL — Université de Lille, Villeneuve d'Ascq",
       title: 'Multi-Robot Semantic Mapping (LiDAR + Camera)',
       tags: ['LIO-SAM', 'YOLO', 'SLAM', 'Multi-robot'],
       desc: "LiDAR-camera fusion to build 3D semantic maps, extended into a cooperative multi-robot system.",
@@ -508,6 +508,14 @@ function onScroll() {
 }
 window.addEventListener('scroll', onScroll, { passive: true });
 onScroll();
+
+/* extra safety net: some browsers restore scroll position on reload
+   even with history.scrollRestoration set early in <head>, so force
+   the top once more once everything has settled (unless the URL
+   points at a specific section via #hash). */
+if (!location.hash) {
+  window.addEventListener('load', () => window.scrollTo(0, 0));
+}
 
 function scrollspy() {
   let current = sections[0]?.id;
