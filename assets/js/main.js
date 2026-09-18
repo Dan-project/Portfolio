@@ -17,7 +17,6 @@ const I18N = {
 
     'hero.kicker': 'OUVERT À TOUTE PROPOSITION D\'OPPORTUNITÉ',
     'hero.title2': 'Ingénieur Robotique.',
-    'hero.lede': 'Étudiant en <strong>Master 2 Systèmes Avancés et Robotique</strong> (Sorbonne Université &amp; ENSAM, Cursus Master en Ingénierie), passionné par les <strong>robots mobiles et humanoïdes</strong>, leur autonomie, leur perception et leur contrôle.',
     'hero.btnProjects': 'Voir mes projets ↓',
     'hero.btnExperience': 'Voir mes stages ↓',
     'hero.btnContact': 'Me contacter',
@@ -92,7 +91,6 @@ const I18N = {
 
     'hero.kicker': 'OPEN TO ANY OPPORTUNITY',
     'hero.title2': 'Robotics Engineer.',
-    'hero.lede': "A graduate student in <strong>Advanced Systems and Robotics (M2)</strong> (Sorbonne Université &amp; ENSAM, Cursus Master en Ingénierie), passionate about <strong>mobile and humanoid robots</strong> — their autonomy, perception, and control.",
     'hero.btnProjects': 'View my projects ↓',
     'hero.btnExperience': 'View my internships ↓',
     'hero.btnContact': 'Get in touch',

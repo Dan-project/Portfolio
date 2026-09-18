@@ -240,15 +240,12 @@ button { font-family: inherit; cursor: pointer; }
   font-family: var(--mono);
   font-size: clamp(1.05rem, 2.4vw, 1.5rem);
   color: var(--text-dim);
-  margin-bottom: 28px;
+  margin-bottom: 40px;
   min-height: 1.6em;
 }
 .hero-typed-wrap .prompt { color: var(--accent-2); }
 #hero-typed { color: var(--text); }
 .typed-cursor { display: inline-block; width: 10px; background: var(--accent-2); margin-left: 2px; animation: blink 0.9s step-end infinite; }
-
-.hero p.lede { max-width: 640px; color: var(--text-dim); font-size: 1.05rem; margin-bottom: 36px; }
-.hero p.lede strong { color: var(--text); font-weight: 600; }
 
 .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 56px; }
 
