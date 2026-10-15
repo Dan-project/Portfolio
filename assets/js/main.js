@@ -658,8 +658,8 @@ typeLoop();
   canvas.addEventListener('mouseleave', () => { mouse.x = null; mouse.y = null; });
 
   const linkDist = 150 * devicePixelRatio;
-  const accent = '77,141,255';
-  const accent2 = '56,199,255';
+  const accent = '37,99,235';
+  const accent2 = '8,145,178';
 
   function frame() {
     ctx.clearRect(0, 0, w, h);
