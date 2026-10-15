@@ -38,7 +38,7 @@ const I18N = {
       <div class="p-row"><span class="p-k">Nom</span><span class="p-v">Dan Calamia</span></div>
       <div class="p-row"><span class="p-k">Rôle</span><span class="p-v">Ingénieur Robotique</span></div>
       <div class="p-row"><span class="p-k">Formation</span><span class="p-v">M2 SAR — Sorbonne / ENSAM</span></div>
-      <div class="p-row"><span class="p-k">Intérêts</span><span class="p-v">SLAM, ROS2, IA, humanoïdes</span></div>
+      <div class="p-row"><span class="p-k">Intérêts</span><span class="p-v">Spatiale, Navigation, Perception, SLAM, ROS2, IA, humanoïdes</span></div>
       <div class="p-row"><span class="p-k">Langues</span><span class="p-v">FR, EN</span></div>
       <div class="p-foot">Certifications : TOEIC 830 (B2), Permis B</div>
     `,
@@ -110,7 +110,7 @@ const I18N = {
       <div class="p-row"><span class="p-k">Name</span><span class="p-v">Dan Calamia</span></div>
       <div class="p-row"><span class="p-k">Role</span><span class="p-v">Robotics Engineer</span></div>
       <div class="p-row"><span class="p-k">Education</span><span class="p-v">M2 SAR — Sorbonne / ENSAM</span></div>
-      <div class="p-row"><span class="p-k">Interests</span><span class="p-v">SLAM, ROS2, AI, humanoids</span></div>
+      <div class="p-row"><span class="p-k">Interests</span><span class="p-v">Space, Navigation, Perception, SLAM, ROS2, AI, humanoids</span></div>
       <div class="p-row"><span class="p-k">Languages</span><span class="p-v">FR, EN</span></div>
       <div class="p-foot">Certifications: TOEIC 830 (B2), Driver's license (FR)</div>
     `,
