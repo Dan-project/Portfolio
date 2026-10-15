@@ -24,7 +24,7 @@ const I18N = {
     'hero.stat2': 'Stages / expériences terrain',
     'hero.stat3': 'Ans de cursus CMI',
 
-    'about.label': '// 01 — À propos',
+    'about.label': '01 — À propos',
     'about.h2': 'Du terrain aux algorithmes.',
     'about.intro': 'Un parcours mêlant mécanique, informatique et robotique, construit sur cinq ans de Cursus Master en Ingénierie (CMI).',
     'about.p1': "Je termine actuellement un <strong>Master en Robotique</strong> à Sorbonne Université, avec des enseignements suivis à l'ENSAM, après une licence en <strong>Ingénierie Mécanique</strong>. Ce parcours CMI (Cursus Master en Ingénierie) impose une charge de travail renforcée : 36 ECTS par semestre, des stages obligatoires, une mobilité internationale et des enseignements en innovation et entrepreneuriat.",
@@ -33,19 +33,17 @@ const I18N = {
     'about.tl2desc': "Semestre d'échange — systèmes mécaniques et méthodes numériques.",
     'about.tl3date': '2020 — 2023',
     'about.tl3desc': 'Licence en Ingénierie Mécanique + CMI — systèmes mécaniques, dynamique, mathématiques appliquées.',
+    'about.cardTitle': 'Profil',
     'about.terminal': `
-      <div class="l"><span class="k">$</span> <span class="v">cat identite.json</span></div>
-      <div class="l">{</div>
-      <div class="l">&nbsp;&nbsp;<span class="k">"nom"</span>: <span class="v">"Dan Calamia"</span>,</div>
-      <div class="l">&nbsp;&nbsp;<span class="k">"role"</span>: <span class="v">"Ingénieur Robotique"</span>,</div>
-      <div class="l">&nbsp;&nbsp;<span class="k">"formation"</span>: <span class="v">"M2 SAR — Sorbonne / ENSAM"</span>,</div>
-      <div class="l">&nbsp;&nbsp;<span class="k">"interets"</span>: [<span class="v">"SLAM"</span>, <span class="v">"ROS2"</span>, <span class="v">"IA"</span>, <span class="v">"humanoïdes"</span>],</div>
-      <div class="l">&nbsp;&nbsp;<span class="k">"langues"</span>: [<span class="v">"FR"</span>, <span class="v">"EN"</span>]</div>
-      <div class="l">}</div>
-      <div class="l"><span class="c">// Certifications: TOEIC 830 (B2), Permis B</span></div>
+      <div class="p-row"><span class="p-k">Nom</span><span class="p-v">Dan Calamia</span></div>
+      <div class="p-row"><span class="p-k">Rôle</span><span class="p-v">Ingénieur Robotique</span></div>
+      <div class="p-row"><span class="p-k">Formation</span><span class="p-v">M2 SAR — Sorbonne / ENSAM</span></div>
+      <div class="p-row"><span class="p-k">Intérêts</span><span class="p-v">SLAM, ROS2, IA, humanoïdes</span></div>
+      <div class="p-row"><span class="p-k">Langues</span><span class="p-v">FR, EN</span></div>
+      <div class="p-foot">Certifications : TOEIC 830 (B2), Permis B</div>
     `,
 
-    'skills.label': '// 02 — Compétences',
+    'skills.label': '02 — Compétences',
     'skills.h2': 'Stack technique.',
     'skills.intro': 'Des outils de développement aux plateformes robotiques, en passant par la conception mécanique.',
     'skills.card1h3': 'Développement',
@@ -55,7 +53,7 @@ const I18N = {
     'skills.lang1name': 'Français', 'skills.lang1level': 'Courant',
     'skills.lang2name': 'Anglais', 'skills.lang2level': 'TOEIC B2 validé',
 
-    'projects.label': '// 03 — Projets',
+    'projects.label': '03 — Projets',
     'projects.h2': 'Cliquez pour explorer.',
     'projects.intro': 'Projets académiques et personnels, du prototype mécanique à la cartographie multi-robot. Cliquez sur une carte pour voir le détail.',
     'projects.filterAll': 'Tous',
@@ -69,12 +67,12 @@ const I18N = {
     'projects.viewGithub': '↗ Voir sur GitHub',
     'projects.close': 'Fermer',
 
-    'experience.label': '// 04 — Expérience',
+    'experience.label': '04 — Expérience',
     'experience.h2': 'Stages',
     'experience.intro': 'Quatre stages, une année de cursus à la fois : chantier, recherche académique, développement pédagogique et robotique multi-robot.',
     'experience.navAria': 'Aller directement à un stage',
 
-    'contact.label': '// 05 — Contact',
+    'contact.label': '05 — Contact',
     'contact.h2': 'Discutons robotique.',
     'contact.intro': 'Ouvert à toute proposition d\'opportunité en ingénierie robotique.',
     'contact.pdfLbl': 'CV',
@@ -98,7 +96,7 @@ const I18N = {
     'hero.stat2': 'Internships / fieldwork',
     'hero.stat3': 'Years in the CMI program',
 
-    'about.label': '// 01 — About',
+    'about.label': '01 — About',
     'about.h2': 'From the field to the algorithms.',
     'about.intro': 'A path blending mechanics, computer science and robotics, built over five years in the Cursus Master en Ingénierie (CMI).',
     'about.p1': "I'm currently finishing a <strong>Master's in Robotics</strong> at Sorbonne Université, with coursework taken at ENSAM, after a Bachelor's in <strong>Mechanical Engineering</strong>. This CMI program (Cursus Master en Ingénierie) comes with a heavier workload: 36 ECTS per semester, mandatory internships, international mobility, and courses in innovation and entrepreneurship.",
@@ -107,19 +105,17 @@ const I18N = {
     'about.tl2desc': 'Exchange semester — mechanical systems and numerical methods.',
     'about.tl3date': '2020 — 2023',
     'about.tl3desc': "Bachelor's in Mechanical Engineering + CMI — mechanical systems, dynamics, applied mathematics.",
+    'about.cardTitle': 'Profile',
     'about.terminal': `
-      <div class="l"><span class="k">$</span> <span class="v">cat identity.json</span></div>
-      <div class="l">{</div>
-      <div class="l">&nbsp;&nbsp;<span class="k">"name"</span>: <span class="v">"Dan Calamia"</span>,</div>
-      <div class="l">&nbsp;&nbsp;<span class="k">"role"</span>: <span class="v">"Robotics Engineer"</span>,</div>
-      <div class="l">&nbsp;&nbsp;<span class="k">"education"</span>: <span class="v">"M2 SAR — Sorbonne / ENSAM"</span>,</div>
-      <div class="l">&nbsp;&nbsp;<span class="k">"interests"</span>: [<span class="v">"SLAM"</span>, <span class="v">"ROS2"</span>, <span class="v">"AI"</span>, <span class="v">"humanoids"</span>],</div>
-      <div class="l">&nbsp;&nbsp;<span class="k">"languages"</span>: [<span class="v">"FR"</span>, <span class="v">"EN"</span>]</div>
-      <div class="l">}</div>
-      <div class="l"><span class="c">// Certifications: TOEIC 830 (B2), Driver's license (FR)</span></div>
+      <div class="p-row"><span class="p-k">Name</span><span class="p-v">Dan Calamia</span></div>
+      <div class="p-row"><span class="p-k">Role</span><span class="p-v">Robotics Engineer</span></div>
+      <div class="p-row"><span class="p-k">Education</span><span class="p-v">M2 SAR — Sorbonne / ENSAM</span></div>
+      <div class="p-row"><span class="p-k">Interests</span><span class="p-v">SLAM, ROS2, AI, humanoids</span></div>
+      <div class="p-row"><span class="p-k">Languages</span><span class="p-v">FR, EN</span></div>
+      <div class="p-foot">Certifications: TOEIC 830 (B2), Driver's license (FR)</div>
     `,
 
-    'skills.label': '// 02 — Skills',
+    'skills.label': '02 — Skills',
     'skills.h2': 'Tech stack.',
     'skills.intro': 'From development tools to robotics platforms, by way of mechanical design.',
     'skills.card1h3': 'Development',
@@ -129,7 +125,7 @@ const I18N = {
     'skills.lang1name': 'French', 'skills.lang1level': 'Native',
     'skills.lang2name': 'English', 'skills.lang2level': 'TOEIC B2 certified',
 
-    'projects.label': '// 03 — Projects',
+    'projects.label': '03 — Projects',
     'projects.h2': 'Click to explore.',
     'projects.intro': 'Academic and personal projects, from mechanical prototypes to multi-robot mapping. Click a card to see the details.',
     'projects.filterAll': 'All',
@@ -143,12 +139,12 @@ const I18N = {
     'projects.viewGithub': '↗ View on GitHub',
     'projects.close': 'Close',
 
-    'experience.label': '// 04 — Experience',
+    'experience.label': '04 — Experience',
     'experience.h2': 'Internships',
     'experience.intro': 'Four internships, one program year at a time: construction site, academic research, educational development, and multi-robot robotics.',
     'experience.navAria': 'Jump to internship',
 
-    'contact.label': '// 05 — Contact',
+    'contact.label': '05 — Contact',
     'contact.h2': "Let's talk robotics.",
     'contact.intro': 'Open to any opportunity in robotics engineering.',
     'contact.pdfLbl': 'CV',
@@ -662,8 +658,8 @@ typeLoop();
   canvas.addEventListener('mouseleave', () => { mouse.x = null; mouse.y = null; });
 
   const linkDist = 150 * devicePixelRatio;
-  const accent = '57,255,168';
-  const accent2 = '45,212,255';
+  const accent = '77,141,255';
+  const accent2 = '56,199,255';
 
   function frame() {
     ctx.clearRect(0, 0, w, h);

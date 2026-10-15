@@ -30,7 +30,7 @@
 
 <nav class="nav">
   <div class="container">
-    <a href="#home" class="logo"><span class="bracket">&lt;</span>Dan_Calamia<span class="bracket">/&gt;</span><span class="cursor-blink"></span></a>
+    <a href="#home" class="logo"><span class="logo-dot"></span>Dan Calamia</a>
     <ul class="nav-links">
       <li><a href="#about"><span class="num">01.</span><span data-i18n="nav.about">À propos</span></a></li>
       <li><a href="#skills"><span class="num">02.</span><span data-i18n="nav.skills">Compétences</span></a></li>
@@ -43,7 +43,7 @@
         <button type="button" class="lang-btn active" data-lang="fr">FR</button>
         <button type="button" class="lang-btn" data-lang="en">EN</button>
       </div>
-      <a class="nav-cta" href="assets/docs/CV_Dan_Calamia.pdf" target="_blank" rel="noopener">./cv.pdf</a>
+      <a class="nav-cta" href="assets/docs/CV_Dan_Calamia.pdf" target="_blank" rel="noopener">CV</a>
       <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -57,7 +57,7 @@
     <div class="container">
       <div class="hero-kicker"><span class="dot"></span> <span data-i18n="hero.kicker">OUVERT À TOUTE PROPOSITION D'OPPORTUNITÉ</span></div>
       <h1>Dan Calamia<br><span class="accent-text" data-i18n="hero.title2">Ingénieur Robotique.</span></h1>
-      <div class="hero-typed-wrap"><span class="prompt">dan@robotics:~$</span> <span id="hero-typed"></span><span class="typed-cursor">&nbsp;</span></div>
+      <div class="hero-typed-wrap"><span id="hero-typed"></span><span class="typed-cursor">&nbsp;</span></div>
       <div class="hero-actions">
         <a href="#projects" class="btn btn-primary" data-i18n="hero.btnProjects">Voir mes projets ↓</a>
         <a href="#experience" class="btn btn-ghost" data-i18n="hero.btnExperience">Voir mes stages ↓</a>
@@ -76,7 +76,7 @@
   <section id="about">
     <div class="container">
       <div class="section-head reveal">
-        <div class="section-label" data-i18n="about.label">// 01 — À propos</div>
+        <div class="section-label" data-i18n="about.label">01 — À propos</div>
         <h2 data-i18n="about.h2">Du terrain aux algorithmes.</h2>
         <p data-i18n="about.intro">Un parcours mêlant mécanique, informatique et robotique, construit sur cinq ans de Cursus Master en Ingénierie (CMI).</p>
       </div>
@@ -113,21 +113,18 @@
           </div>
         </div>
 
-        <div class="about-terminal reveal">
-          <div class="term-bar">
-            <span class="term-dot r"></span><span class="term-dot y"></span><span class="term-dot g"></span>
-            <span class="term-title">whoami.sh</span>
+        <div class="profile-card reveal">
+          <div class="profile-card-head">
+            <span class="profile-dot"></span>
+            <span class="profile-card-title" data-i18n="about.cardTitle">Profil</span>
           </div>
-          <div class="term-body" data-i18n-html="about.terminal">
-            <div class="l"><span class="k">$</span> <span class="v">cat identite.json</span></div>
-            <div class="l">{</div>
-            <div class="l">&nbsp;&nbsp;<span class="k">"nom"</span>: <span class="v">"Dan Calamia"</span>,</div>
-            <div class="l">&nbsp;&nbsp;<span class="k">"role"</span>: <span class="v">"Ingénieur Robotique"</span>,</div>
-            <div class="l">&nbsp;&nbsp;<span class="k">"formation"</span>: <span class="v">"M2 SAR — Sorbonne / ENSAM"</span>,</div>
-            <div class="l">&nbsp;&nbsp;<span class="k">"interets"</span>: [<span class="v">"SLAM"</span>, <span class="v">"ROS2"</span>, <span class="v">"IA"</span>, <span class="v">"humanoïdes"</span>],</div>
-            <div class="l">&nbsp;&nbsp;<span class="k">"langues"</span>: [<span class="v">"FR"</span>, <span class="v">"EN"</span>, <span class="v">"HE"</span>]</div>
-            <div class="l">}</div>
-            <div class="l"><span class="c">// Certifications: TOEIC 830 (B2), Permis B</span></div>
+          <div class="profile-list" data-i18n-html="about.terminal">
+            <div class="p-row"><span class="p-k">Nom</span><span class="p-v">Dan Calamia</span></div>
+            <div class="p-row"><span class="p-k">Rôle</span><span class="p-v">Ingénieur Robotique</span></div>
+            <div class="p-row"><span class="p-k">Formation</span><span class="p-v">M2 SAR — Sorbonne / ENSAM</span></div>
+            <div class="p-row"><span class="p-k">Intérêts</span><span class="p-v">SLAM, ROS2, IA, humanoïdes</span></div>
+            <div class="p-row"><span class="p-k">Langues</span><span class="p-v">FR, EN</span></div>
+            <div class="p-foot">Certifications : TOEIC 830 (B2), Permis B</div>
           </div>
         </div>
       </div>
@@ -138,7 +135,7 @@
   <section id="skills">
     <div class="container">
       <div class="section-head reveal">
-        <div class="section-label" data-i18n="skills.label">// 02 — Compétences</div>
+        <div class="section-label" data-i18n="skills.label">02 — Compétences</div>
         <h2 data-i18n="skills.h2">Stack technique.</h2>
         <p data-i18n="skills.intro">Des outils de développement aux plateformes robotiques, en passant par la conception mécanique.</p>
       </div>
@@ -177,7 +174,7 @@
   <section id="projects">
     <div class="container">
       <div class="section-head reveal">
-        <div class="section-label" data-i18n="projects.label">// 03 — Projets</div>
+        <div class="section-label" data-i18n="projects.label">03 — Projets</div>
         <h2 data-i18n="projects.h2">Cliquez pour explorer.</h2>
         <p data-i18n="projects.intro">Projets académiques et personnels, du prototype mécanique à la cartographie multi-robot. Cliquez sur une carte pour voir le détail.</p>
       </div>
@@ -196,7 +193,7 @@
   <section id="experience">
     <div class="container">
       <div class="section-head reveal">
-        <div class="section-label" data-i18n="experience.label">// 04 — Expérience</div>
+        <div class="section-label" data-i18n="experience.label">04 — Expérience</div>
         <h2 data-i18n="experience.h2">Stages &amp; terrain.</h2>
         <p data-i18n="experience.intro">Quatre stages, une année de cursus à la fois : chantier, recherche académique, développement pédagogique et robotique multi-robot.</p>
       </div>
@@ -212,7 +209,7 @@
   <section id="contact">
     <div class="container">
       <div class="section-head reveal">
-        <div class="section-label" data-i18n="contact.label">// 05 — Contact</div>
+        <div class="section-label" data-i18n="contact.label">05 — Contact</div>
         <h2 data-i18n="contact.h2">Discutons robotique.</h2>
         <p data-i18n="contact.intro">Ouvert à toute proposition d'opportunité en ingénierie robotique.</p>
       </div>
